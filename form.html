@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Soporte para versiones antiguas de Internet Explorer -->
+    <meta name="robots" content="index, follow"> <!-- Permitir indexación por motores de búsqueda -->
+    <link rel="icon" href="../Imagen/favicon.ico" type="image/x-icon">
+    <title>Form</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Menú de navegación para regresar a la página principal -->
+    <nav class="dropdown-menu">
+        <ul>
+            <li><a href="../index.html">Go back</a></li> <!-- Enlace para regresar a la página principal -->
+        </ul>
+    </nav>
+
+    <!-- Contenedor principal para el formulario -->
+    <div class="container2">
+        <div class="container">
+            <h1>Contactar con la administración</h1>
+            <p>
+                Si tienes alguna pregunta, sugerencia o problema con el sitio web, por favor completa el formulario a
+                continuación. Nuestro equipo te responderá lo antes posible.
+            </p>
+
+            <!-- Formulario de contacto -->
+            <form action="#" method="post">
+                <!-- Campo para el nombre -->
+                <label for="name">Tu Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <!-- Campo para el correo electrónico -->
+                <label for="email">Tu Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <!-- Lista desplegable para seleccionar el asunto -->
+                <label for="subject">Asunto:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">-- Selecciona un asunto --</option> <!-- Opción por defecto -->
+                    <option value="general">Consulta General</option>
+                    <option value="feedback">Problema con datos</option>
+                    <option value="issue">Reportar un error</option>
+                </select>
+
+                <!-- Campo para el mensaje -->
+                <label for="message">Tu Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <!-- Botón para enviar el formulario -->
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+
+            <!-- Pie de página -->
+            <div class="footer">
+                <p>
+                    © 2024 Política de privacidad. 
+                    <a href="politica.html">Política de privacidad</a> <!-- Enlace corregido con cierre adecuado -->
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
